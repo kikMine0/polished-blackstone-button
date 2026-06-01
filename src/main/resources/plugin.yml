@@ -1,0 +1,7 @@
+name: polished blackstone button
+version: '${version}'
+
+main: kik.polishedBlackstoneButton.PolishedBlackstoneButton
+paperPluginLoader: kik.polishedBlackstoneButton.PolishedBlackstoneButtonLoader
+api-version: '26.1.2'
+load: POSTWORLD
