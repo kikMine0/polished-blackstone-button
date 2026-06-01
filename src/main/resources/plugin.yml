@@ -1,4 +1,4 @@
-name: polished blackstone button
+name: polished-blackstone-button
 version: '${version}'
 
 main: kik.polishedBlackstoneButton.PolishedBlackstoneButton
