@@ -6,7 +6,32 @@ public final class PolishedBlackstoneButton extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        System.out.println("""
+                polished blackstone button polished blackstone button polished blackstone button polished blackstone button polished blackstone button
+                
+                                                                         @@                                                                         \s
+                                                                     @@@@@@@@@#                                                                     \s
+                                                                  @@@@@@@@@@@@@@@@:                                                                 \s
+                                                                  @@@@@@@@@@@@@@@@@@@#                                                              \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@+                                                          \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@-                                                      \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#                                                   \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                    %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                       -@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                           #@@@@@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                               @@@@@@@@@@@@@@@@@@@@                                                 \s
+                                                                                  =@@@@@@@@@@@@@@@@                                                 \s
+                                                                                      %@@@@@@@@@.                                                   \s
+                                                                                          @@:                                                       \s
+                polished blackstone button polished blackstone button polished blackstone button polished blackstone button polished blackstone button
+                """);
     }
 
     @Override
