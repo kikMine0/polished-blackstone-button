@@ -23,7 +23,7 @@ public class polished implements CommandExecutor {
         // praticamente o si givva un fottio a qualcuno o si givva a tutti
         if (args.length == 0){
             Bukkit.getServer().sendPlainMessage(sender.getName()+"vi da polished blackstone button");
-            for (Player polishedblackstonebutton : Bukkit.getOnlinePlayers()){
+            for (Player polishedblackstonebuttoner : Bukkit.getOnlinePlayers()){
                 polishedblackstonebutton.give()
             }
         }
