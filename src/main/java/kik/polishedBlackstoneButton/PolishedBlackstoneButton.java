@@ -32,6 +32,7 @@ public final class PolishedBlackstoneButton extends JavaPlugin {
                                                                                           @@:                                                       \s
                 polished blackstone button polished blackstone button polished blackstone button polished blackstone button polished blackstone button
                 """);
+        getCommand("polishedblackstonebutton").setExecutor(new polished(this));
     }
 
     @Override
