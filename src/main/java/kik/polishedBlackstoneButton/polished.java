@@ -17,6 +17,7 @@ import java.util.List;
 public class polished implements CommandExecutor {
     private final Plugin plugin;
     List<String> nomiplayer;
+    int quantita;
     public polished(Plugin plugin) {
         this.plugin = plugin;
     }
@@ -74,8 +75,11 @@ public class polished implements CommandExecutor {
                 }
                 if (nomiplayer.contains(arg)){
                     Player poraccio = Bukkit.getPlayer(arg);
-                    Bukkit.getServer().sendPlainMessage(sender.getName() + " ha dato 1 polished blackstone button a "+poraccio.getName());
+                    Bukkit.getServer().sendPlainMessage(sender.getName() + " ha dato "+ChatColor.GOLD+quantita+ChatColor.RESET+" polished blackstone button a "+poraccio.getName());
                     poraccio.give(polishedblackstonebutton);
+                }else {
+                    sender.sendMessage(ChatColor.RED + "FACK U, METTI CIAO IUSER RIAL");
+                    return true;
                 }
             }
         }
