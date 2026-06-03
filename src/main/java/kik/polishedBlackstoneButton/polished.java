@@ -15,6 +15,8 @@ import java.util.Collection;
 import java.util.List;
 
 public class polished implements CommandExecutor {
+    /*/ lowkey dovrei separare la classe per i comandi da tutti ma naaaah
+    amo il trambusto      /*/
     private final Plugin plugin;
     int quantita;
     public polished(Plugin plugin) {
