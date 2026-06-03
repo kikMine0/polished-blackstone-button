@@ -56,7 +56,12 @@ public class polished implements CommandExecutor {
         } else if (args.length == 2) {
             String arg = args[0];
             // purificare la string da testo per far fungere quantita
-            arg.replaceAll("\\D", "");
+            arg = arg.replaceAll("\\D", "");
+            arg = arg.replaceAll(" ", "");
+            // se è solo testo default a 1
+            if (arg.isEmpty()){
+                arg = "1";
+            }
             quantita = Integer.parseInt(args[1]);
             polishedblackstonebutton.setAmount(quantita);
             if (arg.equalsIgnoreCase("tutti")){
