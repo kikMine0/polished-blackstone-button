@@ -51,7 +51,7 @@ public class polished implements CommandExecutor {
 
             return true;
         } else if (args.length == 2) {
-            String arg = args[0];
+            String arg = args[1];
             // purificare la string da testo per far fungere quantita
             arg = arg.replaceAll("\\D", "");
             // se è solo testo default a 1
@@ -64,14 +64,14 @@ public class polished implements CommandExecutor {
                 quantita = 1;
             }
             polishedblackstonebutton.setAmount(quantita);
-            if (arg.equalsIgnoreCase("tutti")){
+            if (args[0].equalsIgnoreCase("tutti")){
                 Bukkit.getServer().sendPlainMessage(sender.getName() + "vi da "+ChatColor.GOLD+quantita+ChatColor.RESET+" polished blackstone button");
                 for (Player polishedblackstonebuttoner : Bukkit.getOnlinePlayers()) {
                     polishedblackstonebuttoner.give(polishedblackstonebutton);
                 }
                 return true;
             }else{
-                    Player poraccio = Bukkit.getPlayer(arg);
+                    Player poraccio = Bukkit.getPlayer(args[1]);
                 if (poraccio == null){sender.sendMessage(ChatColor.RED + "FACK U, METTI CIAO IUSER RIAL"); return true;}
                     Bukkit.getServer().sendPlainMessage(sender.getName() + " ha dato "+ChatColor.GOLD+quantita+ChatColor.RESET+" polished blackstone button a "+poraccio.getName());
                     poraccio.give(polishedblackstonebutton);
