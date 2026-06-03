@@ -11,9 +11,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Collection;
-import java.util.List;
-
 public class polished implements CommandExecutor {
     /*/ lowkey dovrei separare la classe per i comandi da tutti ma naaaah
     amo il trambusto      /*/
@@ -57,7 +54,6 @@ public class polished implements CommandExecutor {
             String arg = args[0];
             // purificare la string da testo per far fungere quantita
             arg = arg.replaceAll("\\D", "");
-            arg = arg.replaceAll(" ", "");
             // se è solo testo default a 1
             if (arg.isEmpty()){
                 arg = "1";
@@ -75,7 +71,6 @@ public class polished implements CommandExecutor {
                 }
                 return true;
             }else{
-
                     Player poraccio = Bukkit.getPlayer(arg);
                 if (poraccio == null){sender.sendMessage(ChatColor.RED + "FACK U, METTI CIAO IUSER RIAL"); return true;}
                     Bukkit.getServer().sendPlainMessage(sender.getName() + " ha dato "+ChatColor.GOLD+quantita+ChatColor.RESET+" polished blackstone button a "+poraccio.getName());
