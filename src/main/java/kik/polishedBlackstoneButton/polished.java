@@ -63,6 +63,10 @@ public class polished implements CommandExecutor {
                 arg = "1";
             }
             quantita = Integer.parseInt(args[1]);
+            // non deve essere sotto 0
+            if (quantita<0){
+                quantita = 1;
+            }
             polishedblackstonebutton.setAmount(quantita);
             if (arg.equalsIgnoreCase("tutti")){
                 Bukkit.getServer().sendPlainMessage(sender.getName() + "vi da "+ChatColor.GOLD+quantita+ChatColor.RESET+" polished blackstone button");
