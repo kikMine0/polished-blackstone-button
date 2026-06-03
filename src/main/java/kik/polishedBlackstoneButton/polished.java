@@ -53,12 +53,9 @@ public class polished implements CommandExecutor {
             return true;
         } else if (args.length == 2) {
             String arg = args[0];
-
-            try{
-                quantita = Integer.parseInt(args[1]);
-            }catch (Exception e){
-                sender.sendMessage(ChatColor.RED+"Hey! chitamortasci tua metti stocazzo di numero! \n"+e.getMessage());
-            }
+            // purificare la string da testo per far fungere quantita
+            arg.replaceAll("\\D", "");
+            quantita = Integer.parseInt(args[1]);
             polishedblackstonebutton.setAmount(quantita);
             if (arg.equalsIgnoreCase("tutti")){
                 Bukkit.getServer().sendPlainMessage(sender.getName() + "vi da "+ChatColor.GOLD+quantita+ChatColor.RESET+" polished blackstone button");
